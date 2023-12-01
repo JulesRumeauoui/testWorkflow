@@ -19,7 +19,17 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4.1.1
         if: ${{github.ref == 'refs/heads/main'}}
-
+      - name: deploy qual ?
+        run: |
+          echo "dep qual"
+          exit(1)
+        
       - name: deploy prod ?
         run: echo "prod"
         if: github.event.inputs.server == 'prod'
+
+      - name: deploy dev ?
+        run: echo "dev"
+        if: github.event.inputs.server == 'dev'
+        
+     
