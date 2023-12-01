@@ -6,4 +6,14 @@ on:
         description: "Environement de déploiement"
         required: true
         default: "prod"
+
+
+jobs:
+  Premier_Job:
+    name: Premier_Job
+    runs-on: ubuntu-lastest
+      steps:
+        - run:echo "premeier job"
+        - run: echo "fin"
+
   
