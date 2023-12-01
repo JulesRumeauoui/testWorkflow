@@ -13,6 +13,6 @@ jobs:
     name: Premier_Job
     runs-on: ubuntu-latest
     steps:
-      - run: echo "démarage sur ${{github.ref}}"
+      - run: echo "demarage sur ${{github.ref}}"
         if: ${{github.ref == 'refs/head/main'}}
   
