@@ -22,4 +22,4 @@ jobs:
 
       - name: deploy prod ?
         run: echo "prod"
-        if: ${{ ${{server}} == prod}}
+        if: ${{ ${{github.event.inputs.server}} == prod}}
