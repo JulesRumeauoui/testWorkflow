@@ -14,5 +14,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "dddd"
-
+        if: ${{github.ref == 'refs.head/main'}}
   
