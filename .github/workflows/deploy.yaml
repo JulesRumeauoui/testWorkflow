@@ -2,10 +2,10 @@ name: deploy
 on: 
   workflow_dispatch:
     inputs:
-      envdep:
+      server:
         description: "Environement de déploiement"
         required: true
-        default: "prod"
+        default: "dev"
 
 
 jobs:
@@ -13,7 +13,6 @@ jobs:
     name: Premier_Job
     runs-on: ubuntu-lastest
     steps:
-      - run: echo "premeier job"
-      - run: echo "fin"
+      - run: echo ${{server}}
 
   
