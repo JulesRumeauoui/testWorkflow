@@ -31,5 +31,8 @@ jobs:
       - name: deploy dev ?
         run: echo "dev"
         if: github.event.inputs.server == 'dev'
+      - name: fin wf
+        if: always()
+        run: echo "fin du wf"
         
      
