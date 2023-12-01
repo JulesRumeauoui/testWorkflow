@@ -12,8 +12,8 @@ jobs:
   Premier_Job:
     name: Premier_Job
     runs-on: ubuntu-lastest
-      steps:
-        - run:echo "premeier job"
-        - run: echo "fin"
+    steps:
+      - run: echo "premeier job"
+      - run: echo "fin"
 
   
