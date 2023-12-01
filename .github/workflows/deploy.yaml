@@ -9,10 +9,10 @@ on:
 
 
 jobs:
-  Premier_Job:
+  deploy-env:
     name: Premier_Job
     runs-on: ubuntu-lastest
     steps:
-      - run: echo ${{server}}
+      - run: echo "dddd"
 
   
