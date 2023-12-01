@@ -1,0 +1,9 @@
+name: deploy
+on: 
+  workflow_dispatch:
+    inputs:
+      envdep:
+        description: "Environement de déploiement"
+        required: true
+        default: "prod"
+  
